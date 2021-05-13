@@ -1,0 +1,38 @@
+ 
+<html>
+  <head>
+    <title>Family Recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div class="container">
+    <center>
+      <h3 class="btn heading">Family Recognition</h3>
+      <br><br>
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+      <b class="objects">Mom<hr>Dad<hr>Nandini<hr>Me<hr></b>
+      <label>Webcam View - </label>
+      <br>
+      <div id="camera"></div>
+      <br>
+      <div id="result"></div>
+      <br>
+      <button class="btn btn-info" onclick="snapshot()">Capture Image</button>
+      <br><br>
+      <input type="file" multiple="false" accept= "image/*" id="image1" onchange="upload(this)">
+      <br><br>
+      <button class="btn btn-success" onclick="identify()">Identify Image</button>
+      <br>
+      <p style="font-size: 22px;">Person :  <span id="result-object"></span></p>
+      <p style="font-size: 22px;">Accuracy :  <span id="result-accuracy"></span></p>
+    </center>
+  </div>
+<script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+.heading {
+    width: 80%;
+    font-size:35px;
+}
+.objects {
+    color: lightseagreen;
+    font-weight: bold;
+}
+body {
+    background-color: lightsteelblue;
+    color: navy;
+    font-weight: bold;
+}
+#camara, #result,#captured_img {
+    border: 5px solid black;
+    width: 350px;
+    height: 300px;
+}
